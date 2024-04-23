@@ -11,14 +11,14 @@
         "maatwebsite/excel": "*"
     },
     "require-dev": {
-        "fakerphp/faker": "^1.23",
-        "larastan/larastan": "^2.0",
-        "laravel/pint": "^1.13",
-        "laravel/sail": "^1.26",
-        "mockery/mockery": "^1.6",
-        "nunomaduro/collision": "^8.0",
+        "fakerphp/faker": "*",
+        "larastan/larastan": "*",
+        "laravel/pint": "*",
+        "laravel/sail": "*",
+        "mockery/mockery": "*",
+        "nunomaduro/collision": "*",
         "phpunit/phpunit": "*",
-        "spatie/laravel-ignition": "^2.4"
+        "spatie/laravel-ignition": "*"
     },
     "autoload": {
         "psr-4": {
