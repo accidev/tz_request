@@ -64,7 +64,6 @@ class ImportToDBService
         }
         catch (Exception $e) {
             DB::rollBack();
-            dd($e->getMessage());
         }
     }
 }
