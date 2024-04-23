@@ -20,12 +20,16 @@ composer-install:
 	@echo "Установка зависимостей Composer..."
 	sudo docker exec -it app composer install
 
+#migration
+migrate:
+	@echo "Migration..."
+	sudo docker exec -it app php artisan migrate
 # Создание символической ссылки для хранилища
 storage-link:
 	@echo "Создание символической ссылки для хранилища..."
 	sudo docker exec -it app php artisan storage:link
 
 # Сборка проекта: сборка контейнеров, установка зависимостей и создание ссылки на хранилище
-build-project: up composer-install storage-link
+build-project: up composer-install migrate storage-link
 
-.PHONY: up down bash composer-install storage-link build-project
+.PHONY: up down bash composer-install migrate storage-link build-project
